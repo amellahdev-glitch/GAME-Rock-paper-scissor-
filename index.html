@@ -4,28 +4,43 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Rock Papper Scissors</title>
+    <title>TIC TAC TOE</title>
+
+    <link rel="stylesheet" href="style.css">
+
+
+
 </head>
 
 <body>
-    <p>
-        Rock Papper Scissors
-    </p>
-    <button onclick="
 
-    playGame('Rock');
-        
-    ">Rock</button>
-    <button onclick=" 
+    <main class="container">
+        <h1>
+            TIC TAC TOE
+        </h1>
 
-      playGame('Paper');
+        <!-- counter input -->
+        <div class="inputs">
+            <p>wins</p>
+            <input type="text" id="winsCounter" value="0" readonly>
+            <input type="text" id="losesCounter" value="0" readonly>
+            <p>loses</p>
 
-    ">Paper</button>
-    <button onclick="
+        </div>
 
-    playGame('Scissors');
-        
-    ">Scissors</button>
+        <!-- TIK TAK TO buttons -->
+        <div class="buttons">
+            <button onclick="playGame('Rock');">Rock</button>
+            <button onclick="playGame('Paper');">Paper</button>
+            <button onclick="playGame('Scissors');">Scissors</button>
+        </div>
+
+
+    </main>
+
+
+
+
     <script src="script.js"></script>
 </body>
 
